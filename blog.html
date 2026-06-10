@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>PBN 빌더 블로그 | 마포 스트릿패션 꿀팁</title>
+    <meta name="description" content="마포 스트릿패션 PBN 빌더의 블로그. 내 스타일을 찾는 방법, 레이어드 꿀팁, 시즌별 아이템 추천까지. 브로가 알려주는 진짜 패션 인사이트.">
+    <meta name="keywords" content="PBN 빌더, 마포 스트릿패션, 스트릿 룩 꿀팁, 레이어드 코디, 스트릿패션 블로그, 마포 패션">
+    <link rel="canonical" href="https://sf-t3-1779642675702-211.vercel.app/blog">
+    <meta property="og:title" content="PBN 빌더 블로그 | 마포 스트릿패션">
+    <meta property="og:description" content="마포 스트릿패션 PBN 빌더의 블로그. 브로가 알려주는 진짜 패션 인사이트.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sf-t3-1779642675702-211.vercel.app/blog">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: #1a1a1a; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo a { color: #fff; text-decoration: none; font-size: 1.8rem; font-weight: 700; letter-spacing: -1px; }
+        .logo span { color: #ff6b35; }
+        .nav-links { display: flex; list-style: none; gap: 30px; }
+        .nav-links li a { color: #ccc; text-decoration: none; font-size: 1rem; font-weight: 500; transition: color 0.3s; }
+        .nav-links li a:hover { color: #ff6b35; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 25px; height: 3px; background: #fff; border-radius: 2px; }
+        .hero { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding: 80px 0; text-align: center; }
+        .hero h1 { color: #fff; font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; }
+        .hero p { color: #aaa; font-size: 1.3rem; max-width: 700px; margin: 0 auto; }
+        .blog-post { background: #fff; max-width: 800px; margin: 60px auto; padding: 50px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); }
+        .blog-post .meta { display: flex; gap: 20px; color: #888; font-size: 0.9rem; margin-bottom: 30px; }
+        .blog-post .meta span { display: flex; align-items: center; gap: 5px; }
+        .blog-post h2 { font-size: 2.2rem; font-weight: 700; margin-bottom: 20px; line-height: 1.3; }
+        .blog-post .lead { font-size: 1.15rem; color: #555; margin-bottom: 30px; border-left: 4px solid #ff6b35; padding-left: 20px; }
+        .blog-post h3 { font-size: 1.5rem; font-weight: 600; margin: 40px 0 15px; }
+        .blog-post p { margin-bottom: 20px; font-size: 1.05rem; color: #333; }
+        .blog-post .tip-box { background: #f9f9f9; border-radius: 12px; padding: 25px; margin: 30px 0; border-left: 4px solid #ff6b35; }
+        .blog-post .tip-box p { margin-bottom: 0; }
+        .blog-post .cta-section { background: #1a1a1a; color: #fff; border-radius: 12px; padding: 30px; margin: 40px 0 0; text-align: center; }
+        .blog-post .cta-section p { color: #ccc; font-size: 1.1rem; margin-bottom: 20px; }
+        .blog-post .cta-section a { display: inline-block; background: #ff6b35; color: #fff; padding: 12px 35px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: background 0.3s; }
+        .blog-post .cta-section a:hover { background: #e55a2b; }
+        footer { background: #1a1a1a; color: #888; text-align: center; padding: 40px 0; margin-top: 60px; }
+        footer a { color: #ff6b35; text-decoration: none; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #1a1a1a; flex-direction: column; padding: 20px; gap: 15px; }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .blog-post { padding: 30px; margin: 30px 20px; }
+            .blog-post h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo"><a href="/">PBN<span>빌더</span></a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="tel:01062790862">전화문의</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>PBN 빌더 블로그</h1>
+            <p>마포 스트릿패션 브로의 진짜 패션 이야기. 내 스타일, 내 룩, 내 방식.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <article class="blog-post">
+            <div class="meta">
+                <span>📅 2024년 3월 15일</span>
+                <span>✍️ PBN 빌더</span>
+                <span>🏷️ 스트릿 룩 꿀팁</span>
+            </div>
+            <h2>마포에서 스트릿패션으로 존재감 띄우는 법: 브로의 3단계 레이어드 꿀팁</h2>
+            <p class="lead">스트릿 룩은 그냥 입는 게 아니야. 내 이야기를 옷으로 말하는 거지. 마포에서 PBN 빌더랑 같이 만들어본 진짜 레이어드 노하우를 공개할게.</p>
+
+            <p>야, 브로. 오늘은 좀 진지하게 패션 얘기 해볼까 해. 나도 처음엔 그냥 '옷'만 입었어. 근데 마포 거리를 걸어다니다 보니까 느껴지는 게 있더라고. 다들 뭔가를 <em>말하고</em> 있다는 거. 어떤 사람은 '나는 힙합 좋아해'를, 어떤 사람은 '나는 편한 게 최고야'를. 근데 그냥 티셔츠 하나만 입고 있으면 아무 말도 안 하는 거나 다름없잖아?</p>
+
+            <p>그래서 내가 PBN 빌더랑 의견을 나누면서 깨달은 점이야. 스트릿패션의 핵심은 <strong>레이어드</strong>라는 거. 근데 그냥 아무 옷이나 겹쳐 입는 게 아니야. 각 레이어가 너의 이야기를 한 문장씩 더해주는 거지. 자, 그럼 지금부터 브로만의 3단계 레이어드 꿀팁을 알려줄게.</p>
+
+            <h3>1단계: 베이스 레이어 — 너의 정체성</h3>
+            <p>가장 안쪽에 입는 건 너의 베이스야. 보통 티셔츠나 긴팔 니트를 많이들 고르는데, 여기서 중요한 건 <strong>핏</strong>이야. 몸에 살짝 붙는 게 좋아. 너무 헐렁하면 위에 입는 레이어랑 부딪혀서 부해 보이고, 너무 타이트하면 움직이기 불편하잖아. 내 추천은 <strong>세미 오버핏</strong>의 흰색이나 검은색 티셔츠야. 베이직해 보이지만, 이게 바로 너의 캔버스 역할을 해. 거기에 포인트로 체인 목걸이나 미니멀한 팔찌 하나 걸어주면 '아, 이 친구 디테일 신경 쓰는구나'라는 인상을 주지.</p>
+
+            <div class="tip-box">
+                <p><strong>브로의 꿀팁:</strong> 베이스 레이어는 면 100%보다는 면+폴리 혼방이 좋아. 구김이 덜 가고 활동성이 훨씬 좋더라고. 특히 마포에서 하루 종일 돌아다닐 생각하면 이거 꽤 중요해.</p>
+            </div>
+
+            <h3>2단계: 미드 레이어 — 분위기 메이커</h3>
+            <p>여기가 진짜 재미있는 부분이야. 미드 레이어는 너의 전체적인 분위기를 결정해. 플란넬 셔츠, 집업 후드, 오픈 카디건, 혹은 얇은 나일론 자켓까지. 선택지는 정말 많아. 근데 여기서 중요한 건 <strong>질감</strong>이야. 베이스가 면이라면 미드는 코듀로이, 울 블렌드, 혹은 워싱된 데님 같은 게 좋아. 시각적으로도 재미있고, 실제로 만졌을 때도 텍스처 차이가 느껴지니까 훨씬 고급스러워 보여.</p>
+
+            <p>색깔은 베이스랑 대비되는 걸로 골라봐. 예를 들어 검은색 티 위에 베이지색 플란넬을 걸치면 전체적으로 따뜻하면서도 차분한 느낌이 들어. 아니면 흰 티 위에 올리브 그린의 밀리터리 자켓을 입으면 훨씬 날카로워 보이고. 이 미드 레이어 하나로 같은 사람이 완전 다른 느낌으로 변할 수 있어. 신기하지 않아?</p>
+
+            <h3>3단계: 아우터 레이어 — 존재감의 완성</h3>
+            <p>가장 바깥쪽에 입는 아우터는 말 그대로 <strong>마무리</strong>야. 이게 너의 전체적인 실루엣을 결정한다고 봐도 과언이 아니야. 요즘 내가 가장 많이 입는 건 크롭트된 워크 자켓이야. 허리선을 살짝 위로 올려주니까 다리가 길어 보이고, 전체적으로 더 깔끔해 보여. 아니면 오버사이즈의 트렌치 코트도 괜찮아. 특히 마포에서 바람 불 때는 트렌치 코트 하나면 스타일과 실용성을 동시에 잡을 수 있지.</p>
+
+            <p>아우터를 고를 때 꼭 체크해야 할 건 <strong>어깨 라인</strong>이야. 너무 내려가면 졸려 보이고, 너무 딱 맞으면 빡빡해 보여. 자연스럽게 떨어지는 라인이 가장 이상적이야. 그리고 주머니! 아우터에 주머니가 많을수록 실용성은 물론이고, 시선을 분산시켜서 전체적인 밸런스를 맞추는 데도 도움이 돼.</p>
+
+            <div class="tip-box">
+                <p><strong>브로의 꿀팁:</strong> 이 모든 레이어를 조합할 때 가장 중요한 건 <strong>딱 하나의 포인트</strong>만 강조하는 거야. 베이스에 프린트가 있다면 아우터는 심플하게. 미드 레이어에 패턴이 있다면 다른 건 무채색으로. 모든 레이어가 다 튀려고 하면 그냥 정신없어 보이거든. PBN 빌더에서도 항상 강조하는 부분이야. '심플함 속에서 디테일을 찾아라'고.</p>
+            </div>
+
+            <p>자, 브로. 이제 알겠어? 스트릿패션은 그냥 '예쁜 옷'을 입는 게 아니야. <strong>너 자신을 표현하는 도구</strong>야. 다음에 마포 거리를 걸을 때는 한번 생각해봐. '내가 오늘 입은 이 세 개의 레이어가 나에 대해 뭘 말해주고 있을까?' 아마 너도 모르게 어깨가 펴지고 걸음걸이가 달라져 있을 거야. 그게 바로 패션의 힘이야.</p>
+
+            <p>그리고 진짜 마지막 꿀팁 하나 더. 이 모든 레이어를 완성시키는 건 바로 <strong>자신감</strong>이야. 아무리 비싼 옷을 입어도 구부정하게 있으면 소용없어. 거울 한 번 보고 '오, 나 괜찮은데?' 하고 나오는 그 마음가짐이 진짜 스트릿패션의 정수야. PBN 빌더 형들도 항상 말하지만, 옷은 날개지, 몸통은 너니까.</p>
+
+            <div class="cta-section">
+                <p>이런 스트릿 룩, 직접 경험해보고 싶지 않아? 지금 바로 전화 줘. 내가 PBN 빌더에서 너만의 룩을 조립해줄게. 첫 상담은 무료야!</p>
+                <a href="tel:01062790862">📞 010-6279-0862 지금 전화하기</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 PBN 빌더 — 마포 스트릿패션의 기준. <a href="tel:01062790862">010-6279-0862</a></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">일상에서 돋보이는 스트릿 룩, 내가 직접 조립하는 나만의 스타일.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
